@@ -18,10 +18,29 @@ collections:
       - { name: body, label: Body, widget: markdown }
 
   - name: pages
-    label: Pages
-    folder: "src/pages/index.md"
-    fields:
-      - { name: path, label: Path }
-      - { name: date, label: Date, widget: date }
-      - { name: title, label: Title }
-      - { name: body, label: Body, widget: markdown }
+    label: Main Pages
+    files:
+      - file: src/pages/index.md
+        label: Landing Page
+        name: index
+        fields:
+          - { name: path, label: Path }
+          - { name: date, label: Date, widget: date }
+          - { name: title, label: Title }
+          - { name: body, label: Body, widget: markdown }
+      - file: src/pages/about/index.md
+        label: About
+        name: about
+        fields:
+          - { name: path, label: Path }
+          - { name: date, label: Date, widget: date }
+          - { name: title, label: Title }
+          - { name: body, label: Body, widget: markdown }
+      - file: src/pages/programs/index.md
+        label: Programs
+        name: programs
+        fields:
+          - { name: path, label: Path }
+          - { name: date, label: Date, widget: date }
+          - { name: title, label: Title }
+          - { name: body, label: Body, widget: markdown }
