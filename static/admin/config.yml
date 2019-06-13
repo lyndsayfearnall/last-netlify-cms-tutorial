@@ -3,7 +3,7 @@ backend:
   repo: lyndsayfearnall/last-netlify-cms-tutorial
 
 
-media_folder: static/images
+media_folder: static/img
 public_folder: assets
 
 collections: 
