@@ -8,7 +8,7 @@ public_folder: assets
 
 collections: 
   - name: policy
-    label: Policy Pages
+    label: Policy Page
     folder: src/pages/policy
     create: true
     fields:
