@@ -23,7 +23,6 @@ collections:
         label: Landing Page
         name: index
         fields:
-          - { name: path, label: Path }
           - { name: title, label: Title }
           - { name: image, label: Image,  widget: image }
           - { name: heading, label: Heading, widget: string }
