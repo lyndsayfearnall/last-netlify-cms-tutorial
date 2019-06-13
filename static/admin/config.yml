@@ -44,3 +44,35 @@ collections:
           - { name: date, label: Date, widget: date }
           - { name: title, label: Title }
           - { name: body, label: Body, widget: markdown }
+      - file: src/pages/visit/index.md
+        label: Visit
+        name: visit
+        fields:
+          - { name: path, label: Path }
+          - { name: date, label: Date, widget: date }
+          - { name: title, label: Title }
+          - { name: body, label: Body, widget: markdown }
+      - file: src/pages/contact/index.md
+        label: Contact
+        name: contact
+        fields:
+          - { name: path, label: Path }
+          - { name: date, label: Date, widget: date }
+          - { name: title, label: Title }
+          - { name: body, label: Body, widget: markdown }
+      - file: src/pages/members/index.md
+        label: Members
+        name: members
+        fields:
+          - { name: path, label: Path }
+          - { name: date, label: Date, widget: date }
+          - { name: title, label: Title }
+          - { name: body, label: Body, widget: markdown }
+      - file: src/pages/massage/index.md
+        label: Massage
+        name: members
+        fields:
+          - { name: path, label: Path }
+          - { name: date, label: Date, widget: date }
+          - { name: title, label: Title }
+          - { name: body, label: Body, widget: markdown }
