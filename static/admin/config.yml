@@ -7,9 +7,9 @@ media_folder: static/img
 public_folder: assets
 
 collections: 
-  - name: blog
-    label: Blog
-    folder: src/pages/blog
+  - name: policy
+    label: Policy Pages
+    folder: src/pages/policy
     create: true
     fields:
       - { name: path, label: Path }
