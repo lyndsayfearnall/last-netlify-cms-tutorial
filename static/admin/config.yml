@@ -70,7 +70,7 @@ collections:
           - { name: body, label: Body, widget: markdown }
       - file: src/pages/massage/index.md
         label: Massage
-        name: members
+        name: massage
         fields:
           - { name: path, label: Path }
           - { name: date, label: Date, widget: date }
