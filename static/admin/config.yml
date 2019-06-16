@@ -83,6 +83,6 @@ collections:
       - file: src/pages/components/testimonials.md
         label: Testimonials
         name: testimonials
-        - { name: quote, label: Quote, widget: markdown }
-        - { name: name, label: Name, widget: string }
-        - { name: years, label: Number of Years a Member, widget: number, valueType: int }
+          - { name: quote, label: Quote, widget: markdown }
+          - { name: name, label: Name, widget: string }
+          - { name: years, label: Number of Years a Member, widget: number, valueType: int }
