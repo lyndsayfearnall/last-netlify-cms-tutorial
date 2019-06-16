@@ -83,7 +83,6 @@ collections:
     folder: src/pages/testimonials
     create: true
     fields:
-      - { name: path, label: Path }
-      - {label: Quote, name: quote, widget: markdown}
-      - {label: Name, name: name, widget: string}
-      - {label: Years as a Member, name: years, widget: number, valueType: int }
+      - { name: path, label: Name }
+      - { label: Quote, name: quote, widget: markdown}
+      - { label: Years as a Member, name: years, widget: number, valueType: int }
