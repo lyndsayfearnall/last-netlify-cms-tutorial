@@ -78,11 +78,11 @@ collections:
           - { name: title, label: Title }
           - { name: body, label: Body, widget: markdown }
 
-  - name: components
-    label: Page Components
-    files:
-      - file: src/pages/components/testimonials.md
-        label: Testimonials
-        name: testimonials
-        fields:
-          - { name: testimonials, label: Testimonials, widget: list, fields: [{label: Quote, name: quote, widget: markdown}, {label: Name, name: name, widget: string}, {label: Years as a Member, name: years, widget: number, valueType: int }]}
+  - name: testimonial
+    label: Testimonials
+    folder: src/pages/testimonials
+    create: true
+    fields:
+        - {label: Quote, name: quote, widget: markdown}
+        - {label: Name, name: name, widget: string}
+        - {label: Years as a Member, name: years, widget: number, valueType: int }
