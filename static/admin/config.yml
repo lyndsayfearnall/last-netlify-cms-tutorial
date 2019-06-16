@@ -27,7 +27,8 @@ collections:
           - { name: image, label: Image,  widget: image }
           - { name: heading, label: Heading, widget: string }
           - { name: subheading, label: Subheading, widget: string }
-          - {name: testimonials, label: Features, widget: list, fields: [{label: Title, name: title, widget: string}, {label: Image, name: image, widget: image}, {label: Description, name: description, widget: markdown }]}
+          - { name: features, label: Features, widget: list, fields: [{label: Title, name: title, widget: string}, {label: Image, name: image, widget: image}, {label: Description, name: description, widget: markdown }]}
+          - { name: testimonials, label: Testimonials, widget: relation, collection: components, searchFields: testimonials, displayFields: [ quote, name, years ] }
       - file: src/pages/about/index.md
         label: About
         name: about
@@ -84,6 +85,4 @@ collections:
         label: Testimonials
         name: testimonials
         fields:
-          - { name: quote, label: Quote, widget: markdown }
-          - { name: name, label: Name, widget: string }
-          - { name: years, label: Number of Years a Member, widget: number, valueType: int }
+          - { name: testimonials, label: Testimonials, widget: list, fields: [{label: Quote, name: quote, widget: markdown}, {label: Name, name: name, widget: string}, {label: Years as a Member, name: years, widget: number, valueType: int }]}
