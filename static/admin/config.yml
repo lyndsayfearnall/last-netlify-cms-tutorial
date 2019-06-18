@@ -28,7 +28,7 @@ collections:
           - { name: heading, label: Heading, widget: string }
           - { name: subheading, label: Subheading, widget: string }
           - { name: features, label: Features, widget: list, fields: [{label: Title, name: title, widget: string}, {label: Image, name: image, widget: image}, {label: Description, name: description, widget: markdown }]}
-          - { name: testimonials, label: Testimonials, widget: relation, collection: components, searchFields: testimonials, displayFields: [ quote, name, years ] }
+          - { name: testimonials, label: Testimonials, widget: relation, collection: testimonial, searchFields: path, displayFields: [ name ], valueField: name, multiple: true, hint: Pick three testimonails to be featured on the home page. }
       - file: src/pages/about/index.md
         label: About
         name: about
@@ -85,4 +85,19 @@ collections:
     fields:
       - { name: path, label: Name }
       - { label: Quote, name: quote, widget: markdown}
-      - { label: Years as a Member, name: years, widget: number, valueType: int }
+      - { label: Years as a Member, name: years, widget: number, valueType: int , hint: How many years has this person been a member? }
+
+  - name: features
+    label: Features
+    files:
+      - name: home
+        label: Home Page Features
+        files: 
+        - name: testimonial
+          label: Testimonials
+          folder: src/pages/features/testimonials
+          create: true
+          fields: 
+          - { name: path, label: Name }
+          - { label: Quote, name: quote, widget: markdown}
+          - { label: Years as a Member, name: years, widget: number, valueType: int , hint: How many years has this person been a member? }
