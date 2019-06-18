@@ -27,16 +27,18 @@ collections:
           - { name: image, label: Image,  widget: image }
           - { name: heading, label: Heading, widget: string }
           - { name: subheading, label: Subheading, widget: string }
-          - { name: features, label: Features, widget: list, fields: [{label: Title, name: title, widget: string}, {label: Image, name: image, widget: image}, {label: Description, name: description, widget: markdown }]}
+          - { name: features, label: Features, widget: list, fields: [{label: Title, name: title, widget: string}, {label: Image, name: image, widget: image}, {label: Description, name: description, widget: markdown }], hint: Add three features to be showcased on the home page.}
           - { name: testimonials, label: Testimonials, widget: relation, collection: testimonial, searchFields: path, displayFields: [ name ], valueField: name, multiple: true, hint: Pick three testimonails to be featured on the home page. }
       - file: src/pages/about/index.md
         label: About
         name: about
         fields:
-          - { name: path, label: Path }
-          - { name: date, label: Date, widget: date }
-          - { name: title, label: Title }
-          - { name: body, label: Body, widget: markdown }
+          - { name: title, label: Page Title }
+          - { name: image, label: Banner Image, widget: image }
+          - { name: heading, label: Heading }
+          - { name: body, label: About Text, widget: markdown }
+          - { name: featureImg, label: Feature Image, widget: image, hint: This image will be displayed to the right of your main text. }
+          - { name: galleryImg, label: Gallery Images, widget: list, hint: The ideal number of images in this gallery is three., fields: [{name: image, label: Gallery Image, widget: image}]}
       - file: src/pages/programs/index.md
         label: Programs
         name: programs
@@ -85,19 +87,14 @@ collections:
     fields:
       - { name: path, label: Name }
       - { label: Quote, name: quote, widget: markdown}
-      - { label: Years as a Member, name: years, widget: number, valueType: int , hint: How many years has this person been a member? }
+      - { label: Years as a Member, name: years, widget: number, valueType: int, hint: How many years has this person been a member? }
 
-  - name: features
-    label: Features
-    files:
-      - name: home
-        label: Home Page Features
-        files: 
-        - name: testimonial
-          label: Testimonials
-          folder: src/pages/features/testimonials
-          create: true
-          fields: 
-          - { name: path, label: Name }
-          - { label: Quote, name: quote, widget: markdown}
-          - { label: Years as a Member, name: years, widget: number, valueType: int , hint: How many years has this person been a member? }
+ - name: prefooter
+    label: Pre-Footer Options
+    folder: src/pages/prefooter
+    create: true
+    fields:
+      - { name: path, label: Heading }
+      - { label: Subtext, name: subtext, widget: text}
+      - { label: Button Text, name: buttontext, widget: string }
+      - { name: buttonUrl, label: Button URL, widget: string }
