@@ -7,15 +7,6 @@ media_folder: static/img
 public_folder: assets
 
 collections: 
-  - name: policy
-    label: Policy Page
-    folder: src/pages/policy
-    create: true
-    fields:
-      - { name: path, label: Path }
-      - { name: title, label: Title }
-      - { name: body, label: Body, widget: markdown }
-
   - name: pages
     label: Main Pages
     files:
@@ -79,6 +70,14 @@ collections:
           - { name: date, label: Date, widget: date }
           - { name: title, label: Title }
           - { name: body, label: Body, widget: markdown }
+  - name: policy
+    label: Policy Pages
+    folder: src/pages/policy
+    create: true
+    fields:
+      - { name: path, label: Path }
+      - { name: title, label: Title }
+      - { name: body, label: Body, widget: markdown }
 
   - name: testimonial
     label: Testimonials
@@ -88,13 +87,22 @@ collections:
       - { name: path, label: Name }
       - { label: Quote, name: quote, widget: markdown}
       - { label: Years as a Member, name: years, widget: number, valueType: int, hint: How many years has this person been a member? }
+  
+  - name: programs
+    label: Programs
+    folder: src/pages/program-options
+    create: true
+    fields:
+      - { name: path, label: Program Name }
+      - { label: Image, name: image, widget: image}
+      - { label: Program Description, name: description, widget: markdown }
 
- - name: prefooter
+  - name: prefooter
     label: Pre-Footer Options
     folder: src/pages/prefooter
     create: true
     fields:
       - { name: path, label: Heading }
-      - { label: Subtext, name: subtext, widget: text}
+      - { label: Subtext, name: subtext, widget: text, required: false }
       - { label: Button Text, name: buttontext, widget: string }
       - { name: buttonUrl, label: Button URL, widget: string }
