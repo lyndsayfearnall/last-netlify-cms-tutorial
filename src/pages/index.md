@@ -1,6 +1,8 @@
 ---
 heading: London Squash & Fitness Club
-image: /assets/main.jpg
+hero:
+  alt: Two squash players playing on a London Squash Club court.
+  image: /assets/main.jpg
 subheading: 'A premier club for those who work hard and play harder. '
 features:
   - description: >-
@@ -42,5 +44,15 @@ testimonials:
   - Lindsay Smith
   - Ron Henry
   - Ross Bentley
+nash:
+  logo:
+    alt: Official Nash Cup logo
+    image: /assets/nash-logo.svg
+  subtitle: >-
+    September 2019
+
+
+    We host the largest Professional Squash Association event in Canada. See Top
+    100 World players from all across the world.
 ---
 
