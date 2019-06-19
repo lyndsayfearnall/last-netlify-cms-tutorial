@@ -10,31 +10,41 @@ features:
       world class squash staff member Jay Francis. The club features 4
       international singles courts and 1 doubles court so you can better master
       the sport.
-    image: 
+    image:
+      alt: Four squash players out on the court.
+      image: /assets/squash-block.jpg
     title: '#1 Priority: Squash'
   - description: >-
       Everything you need for health and fitness can be found here with our
       fitness center, massage therapy, and physiotherapy. Membership includes
       access to men and women’s change rooms with showers, a sauna, and towel
       service.
-    image: 
+    image:
+      alt: London Squash Club fitness centre equipment.
+      image: /assets/gym.jpg
     title: Top notch fitness
   - description: >-
       We're a club of over 300 members who love to get to know one another and
       socialize. We hold parties and potlucks as a community, and members are
       always welcome to drop by for a beer and a chat at our lounge and bar.
-    image: 
+    image:
+      alt: Four squash club members smiling for the camera
+      image: /assets/players-small.jpg
     title: Strong Community
 links:
   - button: Book Now
-    image: 
+    image:
+      alt: Massage table with towels and massage oils
+      image: /assets/massage-big-home.jpg
     subtitle: >-
       Enjoy getting pampered with a massage from our Massage Therapist, Jessica
       Wilken.
     title: Massage Therapy
     url: /massage
   - button: Book a Time
-    image: 
+    image:
+      alt: Two squash players on the court
+      image: /assets/gym.jpg
     subtitle: >-
       Come experience the full array of our facilities and services. We'll be
       happy to introduce you.
