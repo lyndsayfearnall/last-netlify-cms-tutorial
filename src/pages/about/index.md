@@ -3,10 +3,19 @@ title: About
 image: /assets/about-large.jpg
 heading: For Squash. For Fitness. For Life.
 featureImg:
+  alt: Exterior shot of London Squash and Fitness Club building
+  image: /assets/exterior-min.jpg
 galleryImg:
-  - image: 
-  - image: 
-  - image: 
+  - image:
+      alt: London Squash Club lounge area
+      image: /assets/lounge.jpg
+  - image:
+      alt: London Squash Club logo on glass window
+      image: /assets/window.jpg
+  - image:
+      alt: Seating area near squash courts
+      image: /assets/seating.jpg
+preFooter: Learn about the Nash Cup
 ---
 The London Squash & Fitness Club (LSFC) was founded in September 1966 and has maintained a focus on squash and fitness as a non-profit, member-owned organization.
 
