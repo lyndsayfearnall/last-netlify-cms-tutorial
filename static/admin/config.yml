@@ -26,11 +26,11 @@ collections:
         name: about
         fields:
           - { name: title, label: Page Title }
-          - { name: image, label: Banner Image, widget: image }
+          - { name: image, label: Banner Image, widget: object, fields: [{name: image, label: Image, widget: image}, {name: alt, label: Image Alt Text, widget: string, hint: Write a short description of the image (for accessibility purposes).}] }
           - { name: heading, label: Heading }
           - { name: body, label: About Text, widget: markdown }
-          - { name: featureImg, label: Feature Image, widget: image, hint: This image will be displayed to the right of your main text. }
-          - { name: galleryImg, label: Gallery Images, widget: list, hint: The ideal number of images in this gallery is three., fields: [{name: image, label: Gallery Image, widget: image}]}
+          - { name: featureImg, label: Feature Image, widget: object, fields: [{name: image, label: Image, widget: image}, {name: alt, label: Image Alt Text, widget: string, hint: Write a short description of the image (for accessibility purposes).}], hint: This image will be displayed to the right of your main text. }
+          - { name: galleryImg, label: Gallery Images, widget: list, hint: The ideal number of images in this gallery is three., fields: [{name: image, label: Gallery Image, widget: object, fields: [{name: image, label: Image, widget: image}, {name: alt, label: Image Alt Text, widget: string, hint: Write a short description of the image (for accessibility purposes).}] }]}
           - { name: preFooter, label: Pre-Footer, widget: relation, collection: prefooter, searchFields: path, displayFields: [name], valueField: name, hint: The prefooter appears as a green bar at the bottom of this page. }
       - file: src/pages/programs/index.md
         label: Programs
