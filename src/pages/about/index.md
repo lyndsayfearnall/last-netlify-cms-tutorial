@@ -1,6 +1,6 @@
 ---
 title: About
-image: /assets/about-large.jpg
+image: 
 heading: For Squash. For Fitness. For Life.
 featureImg:
   alt: Exterior shot of London Squash and Fitness Club building

@@ -2,7 +2,7 @@
 heading: London Squash & Fitness Club
 hero:
   alt: Two squash players playing on a London Squash Club court.
-  image: 
+  image: /assets/main.jpg
 subheading: 'A premier club for those who work hard and play harder. '
 features:
   - description: >-
